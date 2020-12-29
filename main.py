@@ -2,6 +2,7 @@ import math
 import random
 
 import pygame
+pygame.mixer.init()
 from pygame import mixer
 
 # Intialize the pygame
@@ -15,6 +16,14 @@ background = pygame.image.load('background.png')
 
 # Sound
 mixer.music.load("background.wav")
+#mixer.music.load("a.mp3")
+#pygame.mixer.music.load("a.mp3")
+#pygame.mixer.music.play()
+#import simpleaudio as sa
+
+#wave_obj = sa.WaveObject.from_wave_file("a.mp3")
+#play_obj = wave_obj.play()
+#play_obj.wait_done()
 mixer.music.play(-1)
 
 # Caption and Icon
